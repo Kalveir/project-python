@@ -1,9 +1,12 @@
 #usr/bin/env/python3
-nomor = int(input('masukan bilangannya :'))
-if int(nomor) > 1:
-    for i in range(2 ,nomor):
-        if (nomor % i)== 0:
-            print(nomor, 'bukan bilangan prima')
+angka = int(input('masukan angkanya :'))
+if int(angka) > 1:
+    for ulang in range(2 ,angka):
+        if (angka % ulang)== 0:
+            print(angka, 'bukan bilangan prima')
+            print('karena' ,ulang, 'x' ,angka//ulang, '=' ,angka)
             break
     else:
-        print(nomor, 'bilangan prima')
+        print(angka, 'bilangan prima')
+else:
+    print('maaf angka tidak boleh 1')
